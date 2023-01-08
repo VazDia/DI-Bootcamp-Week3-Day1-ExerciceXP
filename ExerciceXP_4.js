@@ -119,12 +119,14 @@ let row3=document.createElement("tr");
 tableau.appendChild(row3);
 let column9=document.createElement("td")
 column9.style.textAlign="center";
+column9.style.color="red";
 column9.style.border="solid black";
 row3.appendChild(column9);
 column9.textContent="Books 2";
 
 let column10=document.createElement("td")
 column10.style.textAlign="center";
+column10.style.color="red";
 column10.style.fontWeight="bold"
 column10.style.border="solid black";
 column10.textContent=`${allBooks[1].title}  written by ${allBooks[1].author}`;
@@ -132,10 +134,13 @@ row3.appendChild(column10);
 
 let column11=document.createElement("td");
 column11.style.textAlign="center";
+column11.style.backgroundColor="red";
 column11.style.border="solid black";
 let link2=document.createElement("a");
 link2.href=allBooks[1].link;
 let image2=document.createElement("img");
+image2.style.opacity="0.4";
+image2.style.color="red";
 link2.appendChild(image2);
 image2.src=allBooks[1].link;
 image2.style.width="100px";
@@ -145,6 +150,7 @@ row3.appendChild(column11);
 
 let column12=document.createElement("td");
 column12.style.textAlign="center";
+column12.style.color="red";
 column12.style.border="solid black";
 column12.textContent=allBooks[1].alreadyRead;
 row3.appendChild(column12);
